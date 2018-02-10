@@ -39,4 +39,16 @@ class Song
   end
 
 
+    def self.artist_count
+      what = {}
+      @@artists.each do |key|
+        if what[key]
+          what[key] += 1
+        else
+          what[key] = 1
+        end
+      end
+      return what
+    end
+
 end
