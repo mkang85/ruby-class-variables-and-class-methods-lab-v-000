@@ -32,10 +32,11 @@ class Song
       if what[key]
         what[key] += 1
       else
-        what[key] == 1
+        what[key] = 1
       end
     end
     return what
   end
+
 
 end
